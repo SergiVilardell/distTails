@@ -13,6 +13,14 @@ fittailweibull(sample)
 This function scales the input data w.r.t. the threshold and performs MLE with a weibull tail.
 }
 \examples{
-#fittailweibull()
+scale <- 2
+shape <- 1
+threshold <- 1
+s <- rtailweibull(1000, threshold = threshold , scale = scale, shape = shape)
+fits <- fittailweibull(s)
+x_seq <- seq(threshold, max(s), length.out = 500)
+theo_density <- dtailweibull(x_seq, threshold = threshold, scale = fits$scale, shape = fits$shape)
+hist(s, probability = TRUE, breaks = "FD")
+lines(x = x_seq, y = theo_density, col = "red")
 }
 \keyword{weibull}
