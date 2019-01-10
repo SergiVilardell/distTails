@@ -13,6 +13,6 @@ fittailweibull(sample)
 This function scales the input data w.r.t. the threshold and performs MLE with a weibull tail.
 }
 \examples{
-fittailweibull()
+#fittailweibull()
 }
 \keyword{weibull}

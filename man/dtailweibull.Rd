@@ -27,7 +27,7 @@ threshold <- 1
 x_seq <- seq(threshold, 5, length.out = 500)
 theo_density <- dtailweibull(x_seq, threshold = threshold, scale = scale, shape = shape)
 sample <- rtailweibull(500, threshold = threshold, scale = scale, shape = shape)
-hist(sample, probability = T)
+hist(sample, probability = TRUE)
 lines(x = x_seq, y = theo_density, col = "red")
 }
 \keyword{weibull}

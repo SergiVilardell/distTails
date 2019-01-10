@@ -19,7 +19,7 @@
 #' u <- sample[length(sample) - n/2]
 #' xu <- seq(u, max(sample), length.out = 200)
 #' du <- dFTG(xu, a, t, r, u)
-#' hist(sample, breaks = "FD", probability = T)
+#' hist(sample, breaks = "FD", probability = TRUE)
 #' lines(xu, du, col = "red")
 dFTG <- function(x, alpha, theta, rho, threshold) {
   theta * (rho + theta * threshold + theta * x)^(alpha - 1) *

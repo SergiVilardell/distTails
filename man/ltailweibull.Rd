@@ -19,6 +19,6 @@ ltailweibull(x, threshold, scale, shape)
 This function computes the log-likelihood of the tail weibull with the input sample data.
 }
 \examples{
-ltailweibull()
+#ltailweibull()
 }
 \keyword{weibull}

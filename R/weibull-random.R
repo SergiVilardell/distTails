@@ -8,9 +8,9 @@
 #' @keywords weibull
 #' @export
 #' @examples
-#' rtailweibull()
+#' #rtailweibull()
 rtailweibull<- function(n, threshold, scale, shape) {
-  x <- runif(n)
+  x <- stats::runif(n)
   q <- qtailweibull(x, threshold, scale, shape)
   return(q)
 }

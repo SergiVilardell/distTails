@@ -19,6 +19,6 @@ ptailweibull(x, threshold, scale, shape)
 This function computes the probability of the tail weibull with the input sample data.
 }
 \examples{
-ptailweibull()
+#ptailweibull()
 }
 \keyword{weibull}

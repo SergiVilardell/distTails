@@ -8,7 +8,7 @@
 #' @keywords weibull
 #' @export
 #' @examples
-#' ltailweibull()
+#' #ltailweibull()
 ltailweibull <- function(x, threshold, scale, shape) {
   l <- length(x) * log(scale) + length(x) * log(shape) + (shape - 1) * sum(log(x)) - scale * sum(x^shape - threshold^shape)
   return(l)

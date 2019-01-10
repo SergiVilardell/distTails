@@ -19,6 +19,6 @@ rtailweibull(n, threshold, scale, shape)
 This function generates random deviates for the tail weibull distribution.
 }
 \examples{
-rtailweibull()
+#rtailweibull()
 }
 \keyword{weibull}

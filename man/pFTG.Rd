@@ -22,6 +22,6 @@ This function computes the probability of the full-tail gamma with the input sam
 \deqn{F(x; \alpha, \theta, \rho, u) = 1- \frac{\Gamma(\alpha, \rho + \theta(x + u))}{\Gamma(\alpha, \rho + \theta u)}}
 }
 \examples{
-pFTG()
+#pFTG()
 }
 \keyword{dFTG}

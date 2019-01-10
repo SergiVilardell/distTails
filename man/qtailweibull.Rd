@@ -19,6 +19,6 @@ qtailweibull(p, threshold, scale, shape)
 This function computes the quantile of the tail weibull.
 }
 \examples{
-qtailweibull()
+#qtailweibull()
 }
 \keyword{weibull}

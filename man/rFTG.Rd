@@ -14,10 +14,11 @@ rFTG(n, alpha, theta, rho)
 \item{theta}{theta.}
 
 \item{rho}{rho.}
-
-\item{threshold}{Minimum value of the tail.}
 }
 \description{
 This function computes n random variates from full-tail gamma with a rejection method.
+}
+\examples{
+#rFTG()
 }
 \keyword{rFTG}

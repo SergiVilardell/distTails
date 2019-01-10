@@ -10,7 +10,7 @@
 #' @keywords dFTG
 #' @export
 #' @examples
-#' pFTG()
+#' #pFTG()
 pFTG <- function(x, alpha, theta, rho, threshold){
   1- gsl::gamma_inc(alpha, rho + theta * (x + threshold))/gsl::gamma_inc(alpha, rho + theta * threshold)
 }
