@@ -18,7 +18,7 @@
 #' sample <- sort(sample)
 #' u <- sample[length(sample) - n/2]
 #' xu <- seq(u, max(sample), length.out = 200)
-#' du <- dFTGu(xu, a, t, r, u)
+#' du <- dFTG(xu, a, t, r, u)
 #' hist(sample, breaks = "FD", probability = T)
 #' lines(xu, du, col = "red")
 dFTG <- function(x, alpha, theta, rho, threshold) {
