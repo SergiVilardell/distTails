@@ -16,7 +16,7 @@ pFTG(x, alpha, theta, rho)
 \item{rho}{rho.}
 }
 \description{
-This function computes the probability of the full-tail gamma with the input sample data. The expression for the density used is:
+This function computes the probability of the full-tail gamma with the input sample data. The expression for the probability used is:
 \deqn{F(x; \alpha, \theta, \rho) = 1- \frac{\Gamma(\alpha, \rho + \theta x)}{\Gamma(\alpha, \rho)}}
 }
 \examples{
