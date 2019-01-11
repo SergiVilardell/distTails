@@ -3,6 +3,7 @@
 export(dFTG)
 export(dtailweibull)
 export(fittailweibull)
+export(lFTG)
 export(ltailweibull)
 export(pFTG)
 export(ptailweibull)
