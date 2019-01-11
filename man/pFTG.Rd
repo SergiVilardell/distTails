@@ -4,7 +4,7 @@
 \alias{pFTG}
 \title{Probability function}
 \usage{
-pFTG(x, alpha, theta, rho, threshold)
+pFTG(x, alpha, theta, rho)
 }
 \arguments{
 \item{x}{Sample data.}
@@ -14,12 +14,10 @@ pFTG(x, alpha, theta, rho, threshold)
 \item{theta}{theta.}
 
 \item{rho}{rho.}
-
-\item{threshold}{Minimum value of the tail.}
 }
 \description{
 This function computes the probability of the full-tail gamma with the input sample data. The expression for the density used is:
-\deqn{F(x; \alpha, \theta, \rho, u) = 1- \frac{\Gamma(\alpha, \rho + \theta(x + u))}{\Gamma(\alpha, \rho + \theta u)}}
+\deqn{F(x; \alpha, \theta, \rho) = 1- \frac{\Gamma(\alpha, \rho + \theta x)}{\Gamma(\alpha, \rho)}}
 }
 \examples{
 #pFTG()
