@@ -11,5 +11,6 @@
 #' @examples
 #' #pFTG()
 pFTG <- function(x, alpha, theta, rho){
-  1- gsl::gamma_inc(alpha, rho + theta*x)/gsl::gamma_inc(alpha, rho)
+  1- zipfR::Igamma(alpha, rho + theta*x, lower = F)/zipfR::Igamma(alpha, rho, lower = F)
 }
+

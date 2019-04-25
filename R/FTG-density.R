@@ -19,5 +19,5 @@
 #' hist(sample, breaks = "FD", probability = TRUE)
 #' lines(x, d, col = "red")
 dFTG <- function(x, alpha, theta, rho) {
-  theta * (rho + theta * x)^(alpha - 1) * exp(-(rho + theta * x)) / gsl::gamma_inc(alpha, rho)
+  theta * (rho + theta * x)^(alpha - 1) * exp(-(rho + theta * x)) / zipfR::Igamma(alpha, rho, lower = F)
 }
