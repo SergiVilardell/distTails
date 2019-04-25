@@ -14,7 +14,7 @@
 lFTG <- function(x, alpha, theta, rho){
   sigma <- theta/rho
   n <- length(x)
-  l <- -n * (log(gsl::gamma_inc(alpha, rho)) + log(sigma * rho^(-alpha)) - ((alpha - 1)/n)*sum(log(1 + x/sigma))
+  l <- -n * (log(zipfR::Igamma(alpha, rho)) + log(sigma * rho^(-alpha)) - ((alpha - 1)/n)*sum(log(1 + x/sigma))
              + (rho / n) * sum(1 + x/sigma))
   return(l)
 }
