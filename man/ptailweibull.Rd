@@ -19,6 +19,13 @@ ptailweibull(x, threshold, scale, shape)
 This function computes the probability of the tail weibull with the input sample data.
 }
 \examples{
-#ptailweibull()
+# Using the probability function to show the fitting.
+samp <- rtailweibull(1000, 1, 2, 3)
+emp_cdf <- ecdf(samp)(samp)
+pars <- fittailweibull(samp)
+x_seq <- seq(min(samp), max(samp), length.out = 250)
+p <- ptailweibull(x_seq, threshold = 1, scale = pars$scale, shape = pars$shape)
+plot(samp, 1-emp_cdf, log = "y")
+lines(x_seq, 1-p, col = "red")
 }
 \keyword{weibull}
