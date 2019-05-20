@@ -16,4 +16,7 @@ RoxygenNote: 6.1.1
 Imports:
     zipfR
 Suggests: 
-    testthat
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
