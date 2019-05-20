@@ -14,11 +14,11 @@
 #' shape <- 1
 #' threshold <- 1
 #' x_seq <- seq(threshold, 5, length.out = 500)
-#' theo_density <- dtailweibull(x_seq, threshold = threshold, scale = scale, shape = shape)
-#' sample <- rtailweibull(500, threshold = threshold, scale = scale, shape = shape)
+#' theo_density <- dtailw(x_seq, threshold = threshold, scale = scale, shape = shape)
+#' sample <- rtailw(500, threshold = threshold, scale = scale, shape = shape)
 #' hist(sample, probability = TRUE)
 #' lines(x = x_seq, y = theo_density, col = "red")
-dtailweibull <- function(x, threshold, scale, shape) {
+dtailw <- function(x, threshold, scale, shape) {
   d <- scale * shape * x^(shape - 1) * exp(-scale * x^shape + scale * threshold^shape)
   return(d)
 }

@@ -8,8 +8,8 @@
 #' @keywords weibull
 #' @export
 #' @examples
-#' #qtailweibull()
-qtailweibull<- function(p, threshold, scale, shape) {
+#' #qtailw()
+qtailw <- function(p, threshold, scale, shape) {
   q <- ((-log(1 - p) / scale) + threshold^shape)^(1 / shape)
   return(q)
 }
