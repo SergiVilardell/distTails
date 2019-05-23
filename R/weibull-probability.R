@@ -1,6 +1,6 @@
 #' Probability function
 #'
-#' This function computes the cumulative density function of the tail weibull with the input sample data.
+#' This function computes the cumulative density function of the tail Weibull with the input sample data.
 #' \deqn{F(x,\alpha,\beta,\nu)=1-\exp(-\alpha(x+\nu)^\beta+\alpha\nu^\beta).}
 #' @param x Sample data.
 #' @param threshold Minimum value of the tail.

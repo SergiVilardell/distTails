@@ -1,6 +1,6 @@
-#' Maximum Likelihood Estimation of weibull tails
+#' Maximum Likelihood Estimation of Weibull tails
 #'
-#' This function scales the input data w.r.t. the threshold and performs MLE with a weibull tail.
+#' This function scales the input data w.r.t. the threshold and performs MLE with a Weibull tail.
 #' @param sample Sample data.
 #' @keywords weibull
 #' @export
