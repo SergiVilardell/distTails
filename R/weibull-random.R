@@ -1,6 +1,6 @@
 #' Random function
 #'
-#' This function generates random deviates for the tail weibull distribution.
+#' This function generates random deviates for the tail Weibull distribution.
 #' @param n Sample size.
 #' @param threshold Minimum value of the tail.
 #' @param scale Scale parameter.
