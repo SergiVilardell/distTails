@@ -6,8 +6,7 @@ Authors@R:
            family = "Vilardell",
            role = c("aut", "cre"),
            email = "sergivilardell13@gmail.com")
-Description: This packages includes the full definition for Weibull tails, full-tails gamma and more.
-    it also includes fitting functions for these distributions using MLE.
+Description: A full definition for Weibull tails and Full-Tails Gamma and tools for fitting these distributions to empirical tails.
 Depends: R (>= 3.6.0)
 License: GPL-3
 Encoding: UTF-8

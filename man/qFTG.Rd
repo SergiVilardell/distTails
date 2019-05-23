@@ -4,20 +4,20 @@
 \alias{qFTG}
 \title{Probability function}
 \usage{
-qFTG(p, alpha, theta, rho)
+qFTG(p, threshold, scale, shape)
 }
 \arguments{
 \item{p}{probabilities.}
 
-\item{alpha}{alpha.}
+\item{threshold}{Threshold.}
 
-\item{theta}{theta.}
+\item{scale}{Scale.}
 
-\item{rho}{rho.}
+\item{shape}{Shape.}
 }
 \description{
 This function computes the quantiles of the full-tail gamma with the input sample data. The expression for the probability used is:
-\deqn{F(x; \alpha, \theta, \rho) = 1- \frac{\Gamma(\alpha, \rho + \theta x)}{\Gamma(\alpha, \rho)}}
+\deqn{Q(p; \alpha, \theta, \rho) =\Gamma^{-1} \Big( \alpha, (1-p)\Gamma(\alpha, \rho) - \rho \Big)/ \theta }
 }
 \examples{
 qFTG(0.5,1,1,1)

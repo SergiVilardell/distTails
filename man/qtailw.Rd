@@ -17,7 +17,7 @@ qtailw(p, threshold, scale, shape)
 }
 \description{
 This function computes the quantile function of the tail Weibull.
-\deqn{Q(p,\alpha, \beta, \nu) = ((\frac{-\log(1 - p)}{\alpha}) + \nu^\beta)^(1 / \beta)}
+\deqn{Q(p,\alpha, \beta, \nu) = \left(\frac{-\log(1 - p)}{\alpha} + \nu^\beta\right)^{1 / \beta}}
 }
 \examples{
 #qtailw(0.5, 1, 1, 1)

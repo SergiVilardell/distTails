@@ -1,7 +1,7 @@
 #' Log-likelihood function
 #'
 #' This function computes the loglikelihood of the full-tail gamma with the input sample data. The expression used is:
-#' \deqn{l(x; \alpha, \sigma, \rho) = -n(\log\Gamma(\alpha, \rho) + \log(\sigma\rho^{-\alpha}) - \frac{\alpha - 1}{n}\sum_{i = 1}{n}\log(1 + \frac{x_{i}}{\sigma}) + \frac{\rho}{n} \sum_{i = 1}{n}(1 + \frac{x_{i}}{\sigma})}
+#' \deqn{l(x; \alpha, \sigma, \rho) = -n\left(\log\Gamma(\alpha, \rho) + \log(\sigma\rho^{-\alpha}) - \frac{\alpha - 1}{n}\sum_{i = 1}^{n}\log\left(1 + \frac{x_{i}}{\sigma}\right) + \frac{\rho}{n} \sum_{i = 1}^{n}\left(1 + \frac{x_{i}}{\sigma}\right)\right)}
 #' @param x Sample data.
 #' @param alpha alpha.
 #' @param theta theta.

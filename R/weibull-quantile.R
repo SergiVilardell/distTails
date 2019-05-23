@@ -1,7 +1,7 @@
 #' Quantile function
 #'
 #' This function computes the quantile function of the tail Weibull.
-#' \deqn{Q(p,\alpha, \beta, \nu) = ((\frac{-\log(1 - p)}{\alpha}) + \nu^\beta)^(1 / \beta)}
+#' \deqn{Q(p,\alpha, \beta, \nu) = \left(\frac{-\log(1 - p)}{\alpha} + \nu^\beta\right)^{1 / \beta}}
 #' @param p Probability.
 #' @param threshold Minimum value of the tail.
 #' @param scale Scale parameter.

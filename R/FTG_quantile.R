@@ -1,16 +1,16 @@
 #' Probability function
 #'
 #' This function computes the quantiles of the full-tail gamma with the input sample data. The expression for the probability used is:
-#' \deqn{F(x; \alpha, \theta, \rho) = 1- \frac{\Gamma(\alpha, \rho + \theta x)}{\Gamma(\alpha, \rho)}}
+#' \deqn{Q(p; \alpha, \theta, \rho) =\Gamma^{-1} \Big( \alpha, (1-p)\Gamma(\alpha, \rho) - \rho \Big)/ \theta }
 #' @param p probabilities.
-#' @param alpha alpha.
-#' @param theta theta.
-#' @param rho rho.
+#' @param threshold Threshold.
+#' @param scale Scale.
+#' @param shape Shape.
 #' @keywords dFTG
 #' @export
 #' @examples
 #' qFTG(0.5,1,1,1)
-qFTG <- function(p, alpha, theta, rho){
-  (zipfR::Igamma.inv(alpha, (1 - p)*zipfR::Igamma(alpha, rho)) - rho)/theta
+qFTG <- function(p, threshold, scale, shape){
+  (zipfR::Igamma.inv(shape, (1 - p)*zipfR::Igamma(shape, threshold)) - threshold)/scale
 }
 

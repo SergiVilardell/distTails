@@ -4,16 +4,16 @@
 \alias{dFTG}
 \title{Density function}
 \usage{
-dFTG(x, alpha, theta, rho)
+dFTG(x, threshold, scale, shape)
 }
 \arguments{
 \item{x}{Sample data.}
 
-\item{alpha}{alpha.}
+\item{threshold}{Threshold.}
 
-\item{theta}{theta.}
+\item{scale}{Scale.}
 
-\item{rho}{rho.}
+\item{shape}{Shape.}
 }
 \description{
 This function computes the density of the full-tail gamma with the input sample data. The expression for the density used is:
