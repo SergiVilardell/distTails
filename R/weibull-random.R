@@ -8,7 +8,8 @@
 #' @keywords weibull
 #' @export
 #' @examples
-#' #rtailw()
+#' x -> rtailw(1000, 1, 2, 3)
+#' hist(x, breaks = "FD")
 rtailw<- function(n, threshold, scale, shape) {
   x <- stats::runif(n)
   q <- qtailw(x, threshold, scale, shape)

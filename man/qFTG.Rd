@@ -20,6 +20,6 @@ This function computes the quantiles of the full-tail gamma with the input sampl
 \deqn{F(x; \alpha, \theta, \rho) = 1- \frac{\Gamma(\alpha, \rho + \theta x)}{\Gamma(\alpha, \rho)}}
 }
 \examples{
-#qFTG()
+qFTG(0.5,1,1,1)
 }
 \keyword{dFTG}

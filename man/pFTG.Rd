@@ -20,6 +20,6 @@ This function computes the probability of the full-tail gamma with the input sam
 \deqn{G(x; \alpha, \theta, \rho) = 1 - \Gamma(\alpha, \rho + \theta x)/\Gamma(\alpha, \rho).}
 }
 \examples{
-#pFTG()
+pFTG(1,1,1,1)
 }
 \keyword{dFTG}

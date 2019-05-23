@@ -20,6 +20,6 @@ This function computes the log-likelihood of the tail Weibull with the input sam
 \deqn{l(x;\alpha,\beta) = n(\log(\alpha)+\log(\beta))+(\beta-1)\sum_{i=1}^{n}\log(x+\nu)-\alpha\sum_{i=1}^{n}((x+\nu)^\beta-\nu^\beta),}
 }
 \examples{
-#ltailw(1,1,1,1)
+ltailw(1,1,1,1)
 }
 \keyword{weibull}

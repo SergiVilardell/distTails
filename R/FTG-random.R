@@ -8,7 +8,8 @@
 #' @keywords rFTG
 #' @export
 #' @examples
-#' #rFTG()
+#' x -> rFTG(100, 1, 1, 1)
+#' hist(x, breaks = "FD")
 rFTG <- function(n, alpha, theta, rho) {
   sample <- c()
   m <- 0

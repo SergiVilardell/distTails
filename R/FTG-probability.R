@@ -9,7 +9,7 @@
 #' @keywords dFTG
 #' @export
 #' @examples
-#' #pFTG()
+#' pFTG(1,1,1,1)
 pFTG <- function(x, alpha, theta, rho){
   1- zipfR::Igamma(alpha, rho + theta*x, lower = F)/zipfR::Igamma(alpha, rho, lower = F)
 }

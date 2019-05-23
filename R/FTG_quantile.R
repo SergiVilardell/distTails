@@ -9,7 +9,7 @@
 #' @keywords dFTG
 #' @export
 #' @examples
-#' #qFTG()
+#' qFTG(0.5,1,1,1)
 qFTG <- function(p, alpha, theta, rho){
   (zipfR::Igamma.inv(alpha, (1 - p)*zipfR::Igamma(alpha, rho)) - rho)/theta
 }

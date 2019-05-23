@@ -19,6 +19,7 @@ rtailw(n, threshold, scale, shape)
 This function generates random deviates for the tail Weibull distribution.
 }
 \examples{
-#rtailw()
+x -> rtailw(1000, 1, 2, 3)
+hist(x, breaks = "FD")
 }
 \keyword{weibull}

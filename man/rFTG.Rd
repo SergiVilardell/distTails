@@ -19,6 +19,7 @@ rFTG(n, alpha, theta, rho)
 This function computes n random variates from full-tail gamma with a rejection method.
 }
 \examples{
-#rFTG()
+x -> rFTG(100, 1, 1, 1)
+hist(x, breaks = "FD")
 }
 \keyword{rFTG}
