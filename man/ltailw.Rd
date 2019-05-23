@@ -16,7 +16,7 @@ ltailw(x, threshold, scale, shape)
 \item{shape}{Shape parameter.}
 }
 \description{
-This function computes the log-likelihood of the tail weibull with the input sample data.
+This function computes the log-likelihood of the tail Weibull with the input sample data.
 \deqn{l(x;\alpha,\beta) = n(\log(\alpha)+\log(\beta))+(\beta-1)\sum_{i=1}^{n}\log(x+\nu)-\alpha\sum_{i=1}^{n}((x+\nu)^\beta-\nu^\beta),}
 }
 \examples{

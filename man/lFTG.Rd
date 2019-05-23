@@ -2,7 +2,7 @@
 % Please edit documentation in R/FTG-loglikelihood.R
 \name{lFTG}
 \alias{lFTG}
-\title{Loglikelihood function}
+\title{Log-likelihood function}
 \usage{
 lFTG(x, alpha, theta, rho)
 }

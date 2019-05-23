@@ -16,7 +16,7 @@ ptailw(x, threshold, scale, shape)
 \item{shape}{Shape parameter.}
 }
 \description{
-This function computes the cumulative density function of the tail weibull with the input sample data.
+This function computes the cumulative density function of the tail Weibull with the input sample data.
 \deqn{F(x,\alpha,\beta,\nu)=1-\exp(-\alpha(x+\nu)^\beta+\alpha\nu^\beta).}
 }
 \examples{

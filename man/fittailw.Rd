@@ -2,7 +2,7 @@
 % Please edit documentation in R/weibull-mle.R
 \name{fittailw}
 \alias{fittailw}
-\title{Maximum Likelihood Estimation of weibull tails}
+\title{Maximum Likelihood Estimation of Weibull tails}
 \usage{
 fittailw(sample)
 }
@@ -10,7 +10,7 @@ fittailw(sample)
 \item{sample}{Sample data.}
 }
 \description{
-This function scales the input data w.r.t. the threshold and performs MLE with a weibull tail.
+This function scales the input data w.r.t. the threshold and performs MLE with a Weibull tail.
 }
 \examples{
 scale <- 2

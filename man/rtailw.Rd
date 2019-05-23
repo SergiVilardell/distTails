@@ -16,7 +16,7 @@ rtailw(n, threshold, scale, shape)
 \item{shape}{Shape parameter.}
 }
 \description{
-This function generates random deviates for the tail weibull distribution.
+This function generates random deviates for the tail Weibull distribution.
 }
 \examples{
 #rtailw()

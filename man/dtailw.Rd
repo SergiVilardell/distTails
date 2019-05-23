@@ -16,7 +16,7 @@ dtailw(x, threshold, scale, shape)
 \item{shape}{Shape parameter.}
 }
 \description{
-This function computes the density of the tail weibull with the input sample data. The expression for the density used is:
+This function computes the density of the tail Weibull with the input sample data. The expression for the density used is:
 \deqn{f(x, \alpha, \beta, \nu) = \alpha \beta (x + \nu)^{\beta -1} \exp(-\alpha(x + \nu)^{\beta} + \alpha \nu^{\beta})}
 }
 \examples{
