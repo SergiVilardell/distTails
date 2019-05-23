@@ -1,5 +1,5 @@
 Package: distributionTails
-Title: A collection of full defined distribution tails
+Title: A Collection of Full Defined Distribution Tails
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Sergi",
@@ -8,15 +8,10 @@ Authors@R:
            email = "sergivilardell13@gmail.com")
 Description: This packages includes the full definition for weibull tails, full-tails gamma and more.
     it also includes fitting functions for these distributions using MLE.
-Depends: R (>= 3.5.0)
+Depends: R (>= 3.6.0)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 Imports:
     zipfR
-Suggests: 
-    testthat,
-    knitr,
-    rmarkdown
-VignetteBuilder: knitr
