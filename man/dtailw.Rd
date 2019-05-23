@@ -17,7 +17,7 @@ dtailw(x, threshold, scale, shape)
 }
 \description{
 This function computes the density of the tail weibull with the input sample data. The expression for the density used is:
-\deqn{abx^{(b-1)}\exp(-ax^{b}+au^{b})}
+\deqn{f(x, \alpha, \beta, \nu) = \alpha \beta (x + \nu)^{\beta -1} \exp(-\alpha(x + \nu)^{\beta} + \alpha \nu^{\beta})}
 }
 \examples{
 # Generate random deviates from a weibull tail and plot the theoretical density.

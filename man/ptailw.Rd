@@ -17,6 +17,7 @@ ptailw(x, threshold, scale, shape)
 }
 \description{
 This function computes the probability of the tail weibull with the input sample data.
+\deqn{F(x,\alpha,\beta,\nu)=1-\exp(-\alpha(x+\nu)^\beta+\alpha\nu^\beta).}
 }
 \examples{
 # Using the probability function to show the fitting.

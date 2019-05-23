@@ -17,7 +17,7 @@ dFTG(x, alpha, theta, rho)
 }
 \description{
 This function computes the density of the full-tail gamma with the input sample data. The expression for the density used is:
-\deqn{f(x; \alpha, \theta, \rho) = \theta(\rho + \theta x)^{\alpha - 1}\exp(-(\rho + \theta x))/ \Gamma(\alpha, \rho)}
+\deqn{g(x; \alpha, \theta, \rho) = \theta(\rho + \theta x)^{\alpha - 1}\exp(-(\rho + \theta x))/\Gamma(\alpha, \rho).}
 }
 \examples{
 a <- 0.3
