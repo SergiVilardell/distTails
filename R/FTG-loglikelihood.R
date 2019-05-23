@@ -9,7 +9,7 @@
 #' @keywords lFTG
 #' @export
 #' @examples
-#' #lFTG()
+#' #lFTG(1,1,1,1)
 lFTG <- function(x, alpha, theta, rho){
   sigma <- theta/rho
   n <- length(x)

@@ -9,7 +9,7 @@
 #' @keywords weibull
 #' @export
 #' @examples
-#' #ltailw()
+#' #ltailw(1,1,1,1)
 ltailw <- function(x, threshold, scale, shape) {
   l <- length(x) * log(scale) + length(x) * log(shape) + (shape - 1) * sum(log(x)) - scale * sum(x^shape - threshold^shape)
   return(l)
