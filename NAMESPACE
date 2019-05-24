@@ -2,7 +2,7 @@
 
 export(dFTG)
 export(dtailw)
-export(fittailw)
+export(fittail)
 export(lFTG)
 export(ltailw)
 export(pFTG)

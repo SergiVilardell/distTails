@@ -1,18 +1,18 @@
-#' Probability function
+#' TailW Probability Function
 #'
-#' This function computes the cumulative density function of the tail Weibull with the input sample data.
+#' This function computes the cumulative density function of the tailW with the input sample data.
 #' \deqn{F(x,\alpha,\beta,\nu)=1-\exp(-\alpha(x+\nu)^\beta+\alpha\nu^\beta).}
 #' @param x Sample data.
 #' @param threshold Minimum value of the tail.
 #' @param scale Scale parameter.
 #' @param shape Shape parameter.
-#' @keywords weibull
+#' @keywords TailW
 #' @export
 #' @examples
 #' # Using the probability function to show the fitting.
 #'samp <- rtailw(1000, 1, 2, 3)
 #'emp_cdf <- ecdf(samp)(samp)
-#'pars <- fittailw(samp)
+#'pars <- fittail(samp, dist = "TailW")
 #'x_seq <- seq(min(samp), max(samp), length.out = 250)
 #'p <- ptailw(x_seq, threshold = 1, scale = pars$scale, shape = pars$shape)
 #'plot(samp, 1-emp_cdf, log = "y")

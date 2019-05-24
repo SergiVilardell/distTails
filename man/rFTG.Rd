@@ -2,24 +2,24 @@
 % Please edit documentation in R/FTG-random.R
 \name{rFTG}
 \alias{rFTG}
-\title{Random sample function}
+\title{FTG Random Sample Generation}
 \usage{
-rFTG(n, alpha, theta, rho)
+rFTG(n, threshold, scale, shape)
 }
 \arguments{
 \item{n}{Sample size.}
 
-\item{alpha}{alpha.}
+\item{threshold}{Minimum value of the tail.}
 
-\item{theta}{theta.}
+\item{scale}{Scale parameter.}
 
-\item{rho}{rho.}
+\item{shape}{Shape parameter.}
 }
 \description{
 This function computes n random variates from full-tail gamma with a rejection method.
 }
 \examples{
-x -> rFTG(100, 1, 1, 1)
+x <- rFTG(100, 1, 1, 1)
 hist(x, breaks = "FD")
 }
-\keyword{rFTG}
+\keyword{FTG}

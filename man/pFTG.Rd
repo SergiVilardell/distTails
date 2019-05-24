@@ -2,18 +2,18 @@
 % Please edit documentation in R/FTG-probability.R
 \name{pFTG}
 \alias{pFTG}
-\title{Probability function}
+\title{FTG Probability Function}
 \usage{
-pFTG(x, alpha, theta, rho)
+pFTG(x, threshold, scale, shape)
 }
 \arguments{
 \item{x}{Sample data.}
 
-\item{alpha}{alpha.}
+\item{threshold}{Minimum value of the tail.}
 
-\item{theta}{theta.}
+\item{scale}{Scale parameter.}
 
-\item{rho}{rho.}
+\item{shape}{Shape parameter.}
 }
 \description{
 This function computes the probability of the full-tail gamma with the input sample data. The expression for the probability used is:
@@ -22,4 +22,4 @@ This function computes the probability of the full-tail gamma with the input sam
 \examples{
 pFTG(1,1,1,1)
 }
-\keyword{dFTG}
+\keyword{FTG}

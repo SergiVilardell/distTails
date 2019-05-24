@@ -2,18 +2,18 @@
 % Please edit documentation in R/FTG-loglikelihood.R
 \name{lFTG}
 \alias{lFTG}
-\title{Log-likelihood function}
+\title{FTG Log-likelihood Function}
 \usage{
-lFTG(x, alpha, theta, rho)
+lFTG(x, threshold, scale, shape)
 }
 \arguments{
 \item{x}{Sample data.}
 
-\item{alpha}{alpha.}
+\item{threshold}{Minimum value of the tail.}
 
-\item{theta}{theta.}
+\item{scale}{Scale parameter.}
 
-\item{rho}{rho.}
+\item{shape}{Shape parameter.}
 }
 \description{
 This function computes the loglikelihood of the full-tail gamma with the input sample data. The expression used is:
@@ -22,4 +22,4 @@ This function computes the loglikelihood of the full-tail gamma with the input s
 \examples{
 lFTG(1,1,1,1)
 }
-\keyword{lFTG}
+\keyword{FTG}

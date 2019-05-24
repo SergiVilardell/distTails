@@ -2,18 +2,18 @@
 % Please edit documentation in R/FTG-density.R
 \name{dFTG}
 \alias{dFTG}
-\title{Density function}
+\title{FTG Density Function}
 \usage{
 dFTG(x, threshold, scale, shape)
 }
 \arguments{
 \item{x}{Sample data.}
 
-\item{threshold}{Threshold.}
+\item{threshold}{Minimum value of the tail.}
 
-\item{scale}{Scale.}
+\item{scale}{Scale parameter.}
 
-\item{shape}{Shape.}
+\item{shape}{Shape parameter.}
 }
 \description{
 This function computes the density of the full-tail gamma with the input sample data. The expression for the density used is:
@@ -30,4 +30,4 @@ d <- dFTG(x, a, t, r)
 hist(sample, breaks = "FD", probability = TRUE)
 lines(x, d, col = "red")
 }
-\keyword{dFTG}
+\keyword{FTG}

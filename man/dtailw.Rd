@@ -2,7 +2,7 @@
 % Please edit documentation in R/weibull-density.R
 \name{dtailw}
 \alias{dtailw}
-\title{Density function}
+\title{TailW Density function}
 \usage{
 dtailw(x, threshold, scale, shape)
 }
@@ -16,7 +16,7 @@ dtailw(x, threshold, scale, shape)
 \item{shape}{Shape parameter.}
 }
 \description{
-This function computes the density of the tail Weibull with the input sample data. The expression for the density used is:
+This function computes the density of the tailW with the input sample data. The expression for the density used is:
 \deqn{f(x, \alpha, \beta, \nu) = \alpha \beta (x + \nu)^{\beta -1} \exp(-\alpha(x + \nu)^{\beta} + \alpha \nu^{\beta})}
 }
 \examples{
@@ -30,4 +30,4 @@ sample <- rtailw(500, threshold = threshold, scale = scale, shape = shape)
 hist(sample, probability = TRUE)
 lines(x = x_seq, y = theo_density, col = "red")
 }
-\keyword{weibull}
+\keyword{TailW}

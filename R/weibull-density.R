@@ -1,12 +1,12 @@
-#' Density function
+#' TailW Density function
 #'
-#' This function computes the density of the tail Weibull with the input sample data. The expression for the density used is:
+#' This function computes the density of the tailW with the input sample data. The expression for the density used is:
 #' \deqn{f(x, \alpha, \beta, \nu) = \alpha \beta (x + \nu)^{\beta -1} \exp(-\alpha(x + \nu)^{\beta} + \alpha \nu^{\beta})}
 #' @param x Sample data.
 #' @param threshold Minimum value of the tail.
 #' @param scale Scale parameter.
 #' @param shape Shape parameter.
-#' @keywords weibull
+#' @keywords TailW
 #' @export
 #' @examples
 #' # Generate random deviates from a weibull tail and plot the theoretical density.

@@ -2,18 +2,18 @@
 % Please edit documentation in R/FTG_quantile.R
 \name{qFTG}
 \alias{qFTG}
-\title{Probability function}
+\title{FTG Quantile function}
 \usage{
 qFTG(p, threshold, scale, shape)
 }
 \arguments{
-\item{p}{probabilities.}
+\item{p}{Probability.}
 
-\item{threshold}{Threshold.}
+\item{threshold}{Minimum value of the tail.}
 
-\item{scale}{Scale.}
+\item{scale}{Scale parameter.}
 
-\item{shape}{Shape.}
+\item{shape}{Shape parameter.}
 }
 \description{
 This function computes the quantiles of the full-tail gamma with the input sample data. The expression for the probability used is:
@@ -22,4 +22,4 @@ This function computes the quantiles of the full-tail gamma with the input sampl
 \examples{
 qFTG(0.5,1,1,1)
 }
-\keyword{dFTG}
+\keyword{FTG}
