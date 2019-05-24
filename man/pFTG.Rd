@@ -22,4 +22,7 @@ This function computes the probability of the full-tail gamma with the input sam
 \examples{
 pFTG(1,1,1,1)
 }
+\references{
+del Castillo, Joan & Daoudi, Jalila & Serra, Isabel. (2012). The full-tails gamma distribution applied to model extreme values. ASTIN Bulletin.
+}
 \keyword{FTG}

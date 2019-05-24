@@ -8,6 +8,7 @@
 #' @param shape Shape parameter.
 #' @keywords FTG
 #' @export
+#' @references del Castillo, Joan & Daoudi, Jalila & Serra, Isabel. (2012). The full-tails gamma distribution applied to model extreme values. ASTIN Bulletin.
 #' @examples
 #' lFTG(1,1,1,1)
 lFTG <- function(x, threshold, scale, shape){

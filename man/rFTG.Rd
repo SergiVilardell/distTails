@@ -22,4 +22,7 @@ This function computes n random variates from full-tail gamma with a rejection m
 x <- rFTG(100, 1, 1, 1)
 hist(x, breaks = "FD")
 }
+\references{
+del Castillo, Joan & Daoudi, Jalila & Serra, Isabel. (2012). The full-tails gamma distribution applied to model extreme values. ASTIN Bulletin.
+}
 \keyword{FTG}
