@@ -1,12 +1,12 @@
-#' Density function
+#' FTG Density Function
 #'
 #' This function computes the density of the full-tail gamma with the input sample data. The expression for the density used is:
 #' \deqn{g(x; \alpha, \theta, \rho) = \theta(\rho + \theta x)^{\alpha - 1}\exp(-(\rho + \theta x))/\Gamma(\alpha, \rho).}
 #' @param x Sample data.
-#' @param threshold Threshold.
-#' @param scale Scale.
-#' @param shape Shape.
-#' @keywords dFTG
+#' @param threshold Minimum value of the tail.
+#' @param scale Scale parameter.
+#' @param shape Shape parameter.
+#' @keywords FTG
 #' @export
 #' @examples
 #' a <- 0.3
@@ -19,5 +19,5 @@
 #' hist(sample, breaks = "FD", probability = TRUE)
 #' lines(x, d, col = "red")
 dFTG <- function(x, threshold, scale, shape) {
-  theta * (threshold + scale * x)^(shape - 1) * exp(-(threshold + scale * x)) / zipfR::Igamma(shape, threshold, lower = F)
+ scale * (threshold + scale * x)^(shape - 1) * exp(-(threshold + scale * x)) / zipfR::Igamma(shape, threshold, lower = F)
 }

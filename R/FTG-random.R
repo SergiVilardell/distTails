@@ -1,25 +1,25 @@
-#' Random sample function
+#' FTG Random Sample Generation
 #'
 #' This function computes n random variates from full-tail gamma with a rejection method.
 #' @param n Sample size.
-#' @param alpha alpha.
-#' @param theta theta.
-#' @param rho rho.
-#' @keywords rFTG
+#' @param threshold Minimum value of the tail.
+#' @param scale Scale parameter.
+#' @param shape Shape parameter.
+#' @keywords FTG
 #' @export
 #' @examples
-#' x -> rFTG(100, 1, 1, 1)
+#' x <- rFTG(100, 1, 1, 1)
 #' hist(x, breaks = "FD")
-rFTG <- function(n, alpha, theta, rho) {
+rFTG <- function(n, threshold, scale, shape) {
   sample <- c()
   m <- 0
   while (m < n) {
-    x <- stats::rexp(1, rate = rho)
+    x <- stats::rexp(1, rate = threshold)
     u <- stats::runif(1)
-    if (u <= (1 + x)^(alpha - 1)) {
+    if (u <= (1 + x)^(shape - 1)) {
       sample[m + 1] <- x
     }
     m <- length(sample)
   }
-  sample * rho / theta
+  sample * threshold / scale
 }
