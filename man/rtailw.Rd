@@ -2,7 +2,7 @@
 % Please edit documentation in R/weibull-random.R
 \name{rtailw}
 \alias{rtailw}
-\title{Random function}
+\title{TailW Random Sample Generation}
 \usage{
 rtailw(n, threshold, scale, shape)
 }
@@ -16,10 +16,10 @@ rtailw(n, threshold, scale, shape)
 \item{shape}{Shape parameter.}
 }
 \description{
-This function generates random deviates for the tail Weibull distribution.
+This function generates random deviates for the tailW distribution.
 }
 \examples{
-x -> rtailw(1000, 1, 2, 3)
+x <- rtailw(1000, 1, 2, 3)
 hist(x, breaks = "FD")
 }
-\keyword{weibull}
+\keyword{TailW}
