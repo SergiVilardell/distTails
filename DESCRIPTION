@@ -1,13 +1,14 @@
 Package: distributionTails
 Title: A Collection of Full Defined Distribution Tails
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person(given = "Sergi",
            family = "Vilardell",
            role = c("aut", "cre"),
            email = "sergivilardell13@gmail.com")
-Description: A full definition for Weibull tails and Full-Tails Gamma and tools for fitting these distributions to empirical tails.
+Description: A full definition for Weibull tails and Full-Tails Gamma and tools for fitting these distributions to empirical tails. This package build upon the paper by del Castillo, Joan & Daoudi, Jalila & Serra, Isabel. (2012). "The full-tails gamma distribution applied to model extreme values". ASTIN Bulletin. 10.1017/asb.2017.9.
 Depends: R (>= 3.6.0)
+URL: https://github.com/SergiVilardell/distributionTails
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
