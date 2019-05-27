@@ -1,6 +1,6 @@
 Package: distTails
 Title: A Collection of Full Defined Distribution Tails
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person(given = "Sergi",
            family = "Vilardell",
