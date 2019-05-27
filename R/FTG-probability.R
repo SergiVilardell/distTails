@@ -12,6 +12,6 @@
 #' @examples
 #' pFTG(1,1,1,1)
 pFTG <- function(x, threshold, scale, shape){
-  1 - zipfR::Igamma(shape, threshold + scale * x, lower = F) / zipfR::Igamma(shape, threshold, lower = F)
+  1 - zipfR::Igamma(shape, threshold + scale * x, lower = FALSE) / zipfR::Igamma(shape, threshold, lower = FALSE)
 }
 

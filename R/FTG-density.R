@@ -20,5 +20,5 @@
 #' hist(sample, breaks = "FD", probability = TRUE)
 #' lines(x, d, col = "red")
 dFTG <- function(x, threshold, scale, shape) {
- scale * (threshold + scale * x)^(shape - 1) * exp(-(threshold + scale * x)) / zipfR::Igamma(shape, threshold, lower = F)
+ scale * (threshold + scale * x)^(shape - 1) * exp(-(threshold + scale * x)) / zipfR::Igamma(shape, threshold, lower = FALSE)
 }
