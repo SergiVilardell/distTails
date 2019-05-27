@@ -8,7 +8,7 @@
 #' @param shape Shape parameter.
 #' @keywords FTG
 #' @export
-#' @references del Castillo, Joan & Daoudi, Jalila & Serra, Isabel. (2012). The full-tails gamma distribution applied to model extreme values. ASTIN Bulletin.
+#' @references del Castillo, Joan & Daoudi, Jalila & Serra, Isabel. (2012). The full-tails gamma distribution applied to model extreme values. ASTIN Bulletin. <doi:10.1017/asb.2017.9>.
 #' @examples
 #' a <- 0.3
 #' t <- 0.3
