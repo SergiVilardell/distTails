@@ -11,10 +11,11 @@
 #' @references del Castillo, Joan & Daoudi, Jalila & Serra, Isabel. (2012). The full-tails gamma distribution applied to model extreme values. ASTIN Bulletin. <doi:10.1017/asb.2017.9>.
 #' @examples
 #' lFTG(1,1,1,1)
-lFTG <- function(x, threshold, scale, shape){
-sigma <- scale / threshold
-n <- length(x)
-l <- -n * (log(zipfR::Igamma(shape, threshold)) + log(sigma * threshold^(-shape)) - ((shape - 1) / n) * sum(log(1 + x / sigma))
-  + (threshold / n) * sum(1 + x / sigma))
-return(l)
+lFTG <- function(x, threshold, scale, shape) {
+  a <- shape
+  s <- scale
+  r <- threshold
+  l <- -length(x) * (log(gsl::gamma_inc(a, r)) + log(s) - a * log(r) -
+    (a - 1) * mean(log(1 + x / s)) + r * mean(1 + x / s))
+  return(-l)
 }

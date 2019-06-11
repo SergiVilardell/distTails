@@ -20,5 +20,10 @@
 #' hist(sample, breaks = "FD", probability = TRUE)
 #' lines(x, d, col = "red")
 dFTG <- function(x, threshold, scale, shape) {
- scale * (threshold + scale * x)^(shape - 1) * exp(-(threshold + scale * x)) / zipfR::Igamma(shape, threshold, lower = FALSE)
+  a <- shape
+  s <- scale
+  r <- threshold
+
+  pdf <- ((r^a) / s) * (1 + x / s)^(a - 1) * exp(-r * (1 + x / s)) / gsl::gamma_inc(a, r)
+  return(pdf)
 }

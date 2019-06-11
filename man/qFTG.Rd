@@ -4,7 +4,7 @@
 \alias{qFTG}
 \title{FTG Quantile function}
 \usage{
-qFTG(p, threshold, scale, shape)
+qFTG(p, threshold, scale, shape, interval)
 }
 \arguments{
 \item{p}{Probability.}
@@ -14,15 +14,17 @@ qFTG(p, threshold, scale, shape)
 \item{scale}{Scale parameter.}
 
 \item{shape}{Shape parameter.}
+
+\item{interval}{a vector containing the end-points of the interval to be searched for the minimum.}
 }
 \description{
 This function computes the quantiles of the full-tail gamma with the input sample data. The expression for the probability used is:
 \deqn{Q(p; \alpha, \theta, \rho) =\Gamma^{-1} \Big( \alpha, (1-p)\Gamma(\alpha, \rho) - \rho \Big)/ \theta }
 }
 \examples{
-qFTG(0.5,1,1,1)
+qFTG(0.5,1,1,1, c(0,10))
 }
 \references{
-del Castillo, Joan & Daoudi, Jalila & Serra, Isabel. (2012). The full-tails gamma distribution applied to model extreme values. ASTIN Bulletin.
+del Castillo, Joan & Daoudi, Jalila & Serra, Isabel. (2012). The full-tails gamma distribution applied to model extreme values. ASTIN Bulletin. <doi:10.1017/asb.2017.9>.
 }
 \keyword{FTG}
