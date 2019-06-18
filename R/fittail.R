@@ -1,8 +1,8 @@
 #' TailW Maximum Likelihood Estimation
 #'
-#' This function scales the input data w.r.t. the threshold and performs MLE with a tailW.
+#' Maximum Likelihood Estimation of the tails by fitting a tailW or a FTG.
 #' @param sample Sample data.
-#' @param dist Name of the distribution to fit.
+#' @param dist Name of the distribution to fit: "tailW" or "FTG".
 #' @keywords Tail fitting
 #' @export
 #' @examples
@@ -40,7 +40,6 @@ fittail <- function(sample, dist = "TailW") {
   }
 
   if (dist == "FTG") {
-
     eFTG <- function(x, par)
     {
       # Minus the loglikelihood function.
@@ -100,7 +99,7 @@ fittail <- function(sample, dist = "TailW") {
       fit.FTG <- eFTG(x = y, par = c(fit.gamma$estimate[1], 1, fit.gamma$estimate[2]))
     }
 
-    result <- list(a = fit.FTG$a, s = fit.FTG$s * m, r = fit.FTG$r)
+    result <- list(shape = fit.FTG$a, scale = fit.FTG$s * m, threshold = fit.FTG$r)
     return(result)
   }
 }

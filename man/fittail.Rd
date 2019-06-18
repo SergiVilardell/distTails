@@ -9,10 +9,10 @@ fittail(sample, dist = "TailW")
 \arguments{
 \item{sample}{Sample data.}
 
-\item{dist}{Name of the distribution to fit.}
+\item{dist}{Name of the distribution to fit: "tailW" or "FTG".}
 }
 \description{
-This function scales the input data w.r.t. the threshold and performs MLE with a tailW.
+Maximum Likelihood Estimation of the tails by fitting a tailW or a FTG.
 }
 \examples{
 scale <- 2
