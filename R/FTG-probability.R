@@ -1,7 +1,7 @@
 #' FTG Probability Function
 #'
 #' This function computes the probability of the full-tail gamma with the input sample data. The expression for the probability used is:
-#' \deqn{G(x; \alpha, \theta, \rho) = 1 - \Gamma(\alpha, \rho + \theta x)/\Gamma(\alpha, \rho).}
+#' \deqn{G(x; \alpha, \theta, \rho) = 1 - \Gamma(\alpha, \rho + \frac{\rho x}{\sigma})/\Gamma(\alpha, \rho).}
 #' @param x Sample data.
 #' @param threshold Minimum value of the tail.
 #' @param scale Scale parameter.

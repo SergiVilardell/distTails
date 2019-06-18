@@ -17,7 +17,7 @@ pFTG(x, threshold, scale, shape)
 }
 \description{
 This function computes the probability of the full-tail gamma with the input sample data. The expression for the probability used is:
-\deqn{G(x; \alpha, \theta, \rho) = 1 - \Gamma(\alpha, \rho + \theta x)/\Gamma(\alpha, \rho).}
+\deqn{G(x; \alpha, \theta, \rho) = 1 - \Gamma(\alpha, \rho + \frac{\rho x}{\sigma})/\Gamma(\alpha, \rho).}
 }
 \examples{
 pFTG(1,1,1,1)

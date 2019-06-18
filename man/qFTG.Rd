@@ -18,8 +18,7 @@ qFTG(p, threshold, scale, shape, interval)
 \item{interval}{a vector containing the end-points of the interval to be searched for the minimum.}
 }
 \description{
-This function computes the quantiles of the full-tail gamma with the input sample data. The expression for the probability used is:
-\deqn{Q(p; \alpha, \theta, \rho) =\Gamma^{-1} \Big( \alpha, (1-p)\Gamma(\alpha, \rho) - \rho \Big)/ \theta }
+This function computes the quantiles of the full-tail gamma with the input sample data.
 }
 \examples{
 qFTG(0.5,1,1,1, c(0,10))
