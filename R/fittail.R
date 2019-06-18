@@ -3,7 +3,7 @@
 #' Maximum Likelihood Estimation of the tails by fitting a tailW or a FTG.
 #' @param sample Sample data.
 #' @param dist Name of the distribution to fit: "tailW" or "FTG".
-#' @keywords Tail fitting
+#' @keywords Fitting
 #' @export
 #' @examples
 #' scale <- 2

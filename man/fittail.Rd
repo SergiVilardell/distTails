@@ -25,5 +25,4 @@ theo_density <- dtailw(x_seq, threshold = threshold, scale = fits$scale, shape =
 hist(s, probability = TRUE, breaks = "FD")
 lines(x = x_seq, y = theo_density, col = "red")
 }
-\keyword{Tail}
-\keyword{fitting}
+\keyword{Fitting}
