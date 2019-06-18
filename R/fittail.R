@@ -50,7 +50,7 @@ fittail <- function(sample, dist = "TailW") {
         s <- parameters[2]
         r <- parameters[3]
 
-        logl <- lFTG(sample, r, s, a)
+        logl <- lFTG(x, r, s, a)
         return(logl)
       }
       base::tryCatch(
