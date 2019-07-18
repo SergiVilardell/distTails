@@ -6,6 +6,7 @@
 #' @param threshold Minimum value of the tail.
 #' @param scale Scale parameter.
 #' @param shape Shape parameter.
+#' @return Gives the log-likelihood of the TailW. The length of the result is determined by the length of x.
 #' @keywords TailW
 #' @export
 #' @examples

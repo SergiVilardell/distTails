@@ -15,6 +15,9 @@ qtailw(p, threshold, scale, shape)
 
 \item{shape}{Shape parameter.}
 }
+\value{
+Gives the quantiles of the TailW. The length of the result is determined by the length of x.
+}
 \description{
 This function computes the quantile function of the tailW.
 \deqn{Q(p,\alpha, \beta, \nu) = \left(\frac{-\log(1 - p)}{\alpha} + \nu^\beta\right)^{1 / \beta}}

@@ -15,6 +15,9 @@ ptailw(x, threshold, scale, shape)
 
 \item{shape}{Shape parameter.}
 }
+\value{
+Gives the distribution function of the TailW. The length of the result is determined by the length of x.
+}
 \description{
 This function computes the cumulative density function of the tailW with the input sample data.
 \deqn{F(x,\alpha,\beta,\nu)=1-\exp(-\alpha(x+\nu)^\beta+\alpha\nu^\beta).}

@@ -5,6 +5,7 @@
 #' @param threshold Minimum value of the tail.
 #' @param scale Scale parameter.
 #' @param shape Shape parameter.
+#' @return Gives random deviates of the TailW. The length of the result is determined by n.
 #' @keywords TailW
 #' @export
 #' @examples

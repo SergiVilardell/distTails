@@ -11,6 +11,9 @@ fittail(sample, dist = "TailW")
 
 \item{dist}{Name of the distribution to fit.}
 }
+\value{
+Gives a list of the estimated parameters fo the function fitted. For the TailW it returns, scale and shape. Fot the FTG it returns the parameters scale, shape, and threshold.
+}
 \description{
 This function scales the input data w.r.t. the threshold and performs MLE with a tailW.
 }

@@ -15,6 +15,9 @@ dFTG(x, threshold, scale, shape)
 
 \item{shape}{Shape parameter.}
 }
+\value{
+Gives the density of the FTG. The length of the result is determined by the length of x.
+}
 \description{
 This function computes the density of the full-tail gamma with the input sample data. The expression for the density used is:
 \deqn{g(x; \alpha, \theta, \rho) = \theta(\rho + \theta x)^{\alpha - 1}\exp(-(\rho + \theta x))/\Gamma(\alpha, \rho).}

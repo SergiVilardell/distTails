@@ -15,6 +15,9 @@ pFTG(x, threshold, scale, shape)
 
 \item{shape}{Shape parameter.}
 }
+\value{
+Gives the distribution function of the FTG. The length of the result is determined by the length of x.
+}
 \description{
 This function computes the probability of the full-tail gamma with the input sample data. The expression for the probability used is:
 \deqn{G(x; \alpha, \theta, \rho) = 1 - \Gamma(\alpha, \rho + \theta x)/\Gamma(\alpha, \rho).}

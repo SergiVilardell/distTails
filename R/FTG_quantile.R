@@ -7,6 +7,7 @@
 #' @param scale Scale parameter.
 #' @param shape Shape parameter.
 #' @param interval a vector containing the end-points of the interval to be searched for the minimum.
+#' @return Gives the quantiles of the FTG. The length of the result is determined by the length of x.
 #' @keywords FTG
 #' @export
 #' @references del Castillo, Joan & Daoudi, Jalila & Serra, Isabel. (2012). The full-tails gamma distribution applied to model extreme values. ASTIN Bulletin. <doi:10.1017/asb.2017.9>.
@@ -24,3 +25,4 @@ qFTG <- function(p, threshold, scale, shape, interval) {
   result <- stats::optimize(f = equation, interval = interval)
   return(result$minimum)
 }
+#' @return Gives the density of the FTG. The length of the result is determined by the length of x.

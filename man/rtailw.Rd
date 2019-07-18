@@ -15,6 +15,9 @@ rtailw(n, threshold, scale, shape)
 
 \item{shape}{Shape parameter.}
 }
+\value{
+Gives random deviates of the TailW. The length of the result is determined by n.
+}
 \description{
 This function generates random deviates for the tailW distribution.
 }

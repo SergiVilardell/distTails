@@ -15,6 +15,9 @@ ltailw(x, threshold, scale, shape)
 
 \item{shape}{Shape parameter.}
 }
+\value{
+Gives the log-likelihood of the TailW. The length of the result is determined by the length of x.
+}
 \description{
 This function computes the log-likelihood of the tailW with the input sample data.
 \deqn{l(x;\alpha,\beta) = n(\log(\alpha)+\log(\beta))+(\beta-1)\sum_{i=1}^{n}\log(x+\nu)-\alpha\sum_{i=1}^{n}((x+\nu)^\beta-\nu^\beta)}

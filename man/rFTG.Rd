@@ -15,6 +15,9 @@ rFTG(n, threshold, scale, shape)
 
 \item{shape}{Shape parameter.}
 }
+\value{
+Gives random deviates of the FTG. The length of the result is determined by n.
+}
 \description{
 This function computes n random variates from full-tail gamma with a rejection method.
 }

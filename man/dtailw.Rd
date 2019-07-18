@@ -15,6 +15,9 @@ dtailw(x, threshold, scale, shape)
 
 \item{shape}{Shape parameter.}
 }
+\value{
+Gives the density of the TailW. The length of the result is determined by the length of x.
+}
 \description{
 This function computes the density of the tailW with the input sample data. The expression for the density used is:
 \deqn{f(x, \alpha, \beta, \nu) = \alpha \beta (x + \nu)^{\beta -1} \exp(-\alpha(x + \nu)^{\beta} + \alpha \nu^{\beta})}

@@ -3,6 +3,7 @@
 #' This function scales the input data w.r.t. the threshold and performs MLE with a tailW.
 #' @param sample Sample data.
 #' @param dist Name of the distribution to fit.
+#' @return Gives a list of the estimated parameters fo the function fitted. For the TailW it returns, scale and shape. Fot the FTG it returns the parameters scale, shape, and threshold.
 #' @keywords Tail fitting
 #' @export
 #' @examples
@@ -100,7 +101,7 @@ fittail <- function(sample, dist = "TailW") {
       fit.FTG <- eFTG(x = y, par = c(fit.gamma$estimate[1], 1, fit.gamma$estimate[2]))
     }
 
-    result <- list(a = fit.FTG$a, s = fit.FTG$s * m, r = fit.FTG$r)
+    result <- list(shape = fit.FTG$a, scale = fit.FTG$s * m, threshold = fit.FTG$r)
     return(result)
   }
 }
