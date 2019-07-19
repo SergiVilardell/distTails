@@ -14,7 +14,7 @@ Authors@R:
            )
 Description: A full definition for Weibull tails and Full-Tails Gamma and tools for fitting these distributions to empirical tails. This package build upon the paper by del Castillo, Joan & Daoudi, Jalila & Serra, Isabel. (2012) <doi:10.1017/asb.2017.9>.
 Depends: R (>= 3.6.0)
-URL: https://github.com/SergiVilardell/distributionTails
+URL: https://github.com/SergiVilardell/distTails
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
