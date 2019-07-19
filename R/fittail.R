@@ -4,7 +4,7 @@
 #' @param sample Sample data.
 #' @param dist Name of the distribution to fit.
 #' @return Gives a list of the estimated parameters fo the function fitted. For the TailW it returns, scale and shape. Fot the FTG it returns the parameters scale, shape, and threshold.
-#' @keywords Tail fitting
+#' @keywords Tail-fitting
 #' @export
 #' @examples
 #' scale <- 2

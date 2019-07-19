@@ -9,7 +9,7 @@ fittail(sample, dist = "TailW")
 \arguments{
 \item{sample}{Sample data.}
 
-\item{dist}{Name of the distribution to fit: "tailW" or "FTG".}
+\item{dist}{Name of the distribution to fit.}
 }
 \value{
 Gives a list of the estimated parameters fo the function fitted. For the TailW it returns, scale and shape. Fot the FTG it returns the parameters scale, shape, and threshold.
@@ -28,4 +28,4 @@ theo_density <- dtailw(x_seq, threshold = threshold, scale = fits$scale, shape =
 hist(s, probability = TRUE, breaks = "FD")
 lines(x = x_seq, y = theo_density, col = "red")
 }
-\keyword{Fitting}
+\keyword{Tail-fitting}
