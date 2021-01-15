@@ -8,6 +8,7 @@
 #' @param shape Shape parameter.
 #' @return Gives the distribution function of the TailW. The length of the result is determined by the length of x.
 #' @keywords TailW
+#' @references Vilardell, Sergi & Serra, Isabel & Abella, Jaume & del Castillo, Joan & Cazorla, Francisco. (2019). Software Timing Analysis for Complex Hardware with Survivability and Risk Analysis. 227-236. <doi:10.1109/ICCD46524.2019.00036>.
 #' @export
 #' @examples
 #' # Using the probability function to show the fitting.

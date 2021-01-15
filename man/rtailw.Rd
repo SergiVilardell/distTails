@@ -25,4 +25,7 @@ This function generates random deviates for the tailW distribution.
 x <- rtailw(1000, 1, 2, 3)
 hist(x, breaks = "FD")
 }
+\references{
+Vilardell, Sergi & Serra, Isabel & Abella, Jaume & del Castillo, Joan & Cazorla, Francisco. (2019). Software Timing Analysis for Complex Hardware with Survivability and Risk Analysis. 227-236. <doi:10.1109/ICCD46524.2019.00036>.
+}
 \keyword{TailW}

@@ -32,4 +32,7 @@ p <- ptailw(x_seq, threshold = 1, scale = pars$scale, shape = pars$shape)
 plot(samp, 1-emp_cdf, log = "y")
 lines(x_seq, 1-p, col = "red")
 }
+\references{
+Vilardell, Sergi & Serra, Isabel & Abella, Jaume & del Castillo, Joan & Cazorla, Francisco. (2019). Software Timing Analysis for Complex Hardware with Survivability and Risk Analysis. 227-236. <doi:10.1109/ICCD46524.2019.00036>.
+}
 \keyword{TailW}

@@ -87,10 +87,10 @@ fittail <- function(sample, dist = "TailW") {
     m <- mean(sample)
     y <- sample / m
 
-    if (fit.gpd[1] > 0 && 1 / fit.gpd[1] < 100) {
+    if (fit.gpd$coeff[1] > 0 && 1 / fit.gpd$coeff[1] < 100) {
       # Before fitting the FTG we initialize rho.
-      a <- -1 / fit.gpd[1]
-      s <- (fit.gpd[2] / fit.gpd[1]) / m
+      a <- -1 / fit.gpd$coeff[1]
+      s <- (fit.gpd$coeff[2] / fit.gpd$coeff[1]) / m
       r <- r_initialize(c(a, s))
       fit.FTG <- eFTG(x = y, par = c(a, s, r))
     }
